@@ -322,9 +322,13 @@ python 05_results_analysis.py
 
 **For Different Scenarios**:
 - **Real-time prediction**: MLP (0.071s inference)
-- **Highest accuracy**: Gaussian Process (99.96% R²)
+- **Highest accuracy**: Gaussian Process 
 - **Uncertainty quantification**: Gaussian Process (built-in)
 - **Interpretability**: Random Forest (feature importance)
+
+## Conclusion
+
+This project demonstrates that steel quality prediction strongly benefits from non-linear regression models. Gaussian Process, MLP, and LSTM models significantly outperform traditional linear and kernel-based approaches for this dataset.
 
 ##  Future Enhancements
 
@@ -354,13 +358,21 @@ python 05_results_analysis.py
 
 ##  Project Highlights
 
-✅ **All deliverables completed successfully**
-✅ **Six models trained and evaluated**
-✅ **99.96% R² score achieved** (exceptional)
-✅ **Comprehensive visualizations generated**
-✅ **Production-ready pipeline implemented**
-✅ **Detailed documentation provided**
-✅ **Reproducible results with seed control**
+ **All deliverables completed successfully**
+ **Six models trained and evaluated**
+ **99.96% R² score achieved** (exceptional)
+ **Comprehensive visualizations generated**
+ **Production-ready pipeline implemented**
+ **Detailed documentation provided**
+ **Reproducible results with seed control**
+
+## Limitations and Overfitting Risk
+
+Despite the strong predictive performance achieved by the proposed models—particularly the Gaussian Process, MLP, and LSTM—there remains a potential risk of overfitting due to model complexity and extensive feature engineering. The feature space was expanded to more than 100 engineered features through polynomial, statistical, and interaction-based transformations. While this can improve predictive power, it also increases the likelihood of capturing noise or dataset-specific patterns rather than generalizable relationships.
+
+In addition, highly flexible models such as Gaussian Processes and deep neural networks are inherently more prone to overfitting, especially when trained on datasets with limited size or homogeneous distributions. Although a strict train–test separation was maintained and model performance was evaluated exclusively on unseen test data, the exceptionally high R² values suggest that further validation is necessary to confirm generalization capability.
+
+Future work will focus on mitigating overfitting through systematic feature selection, dimensionality reduction techniques such as Principal Component Analysis (PCA), and more extensive cross-validation. Evaluating the models on additional datasets or under different operating conditions would further strengthen confidence in their robustness and suitability for real-world deployment.
 
 ##  Support & Documentation
 
