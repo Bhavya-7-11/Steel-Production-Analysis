@@ -38,7 +38,7 @@ The objective of this project is to:
 
 ### Performance Highlights
 
--  **Achieved 99.96% prediction accuracy** with Gaussian Process Regressor
+-  **Achieved an R² score of 0.9996** with Gaussian Process Regressor
 -  **Sub-millisecond error rates** (MAE: 0.0013, RMSE: 0.0018)
 -  **Three models exceeded 98% R² score** (GP, LSTM, MLP)
 -  **Complete pipeline execution**: 24.58 minutes
@@ -234,7 +234,6 @@ Residual and error distribution plots confirm that the best-performing models pr
 4. Well-suited for steel production data patterns
 
 **Deep Learning Performance**:
-- LSTM captured temporal dependencies effectively (R²=0.9934)
 - MLP balanced accuracy with speed (R²=0.9872, 0.071s inference)
 - Both models demonstrate production-ready performance
 
