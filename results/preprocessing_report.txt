@@ -1,0 +1,13 @@
+
+PREPROCESSING SUMMARY
+=====================
+Original combined size: 10979 rows
+Final size: 10979 rows
+Features: 19
+Train set: 8783 rows
+Test set: 2196 rows
+
+Data Quality:
+- Missing values: 0
+- Duplicates: 0
+- Infinite values: 0

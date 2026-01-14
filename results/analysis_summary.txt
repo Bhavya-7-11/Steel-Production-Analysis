@@ -1,0 +1,16 @@
+
+=== ANALYSIS SUMMARY ===
+
+Best RMSE: Gaussian Process (0.0018)
+Best MAE: Gaussian Process (0.0013)
+Best R²: Gaussian Process (0.9996)
+Fastest Inference: MLP (0.0705s)
+
+=== ALL MODELS ===
+            model     rmse      mae        r2  inference_time
+    Random Forest 0.061976 0.046638  0.509427        0.316567
+Gradient Boosting 0.058101 0.043502  0.568846        0.096748
+              SVM 0.088938 0.067633 -0.010274        2.451446
+              MLP 0.009995 0.006363  0.987242        0.070542
+ Gaussian Process 0.001810 0.001285  0.999581        0.375096
+             LSTM 0.007171 0.004109  0.993432        0.770076

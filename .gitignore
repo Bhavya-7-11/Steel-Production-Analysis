@@ -1,0 +1,45 @@
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache & build
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.installed.cfg
+wheels/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+*.bak
+
+# ❌ ML models (CRITICAL)
+results/models/
+models/
+*.pkl
+*.h5
+*.joblib
+
+# ❌ Archives
+*.zip
