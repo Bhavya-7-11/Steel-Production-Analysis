@@ -65,13 +65,6 @@ steel_production_analysis/
 │   └── 06_run_pipeline.py            # Master pipeline orchestrator
 │
 ├── results/
-│   ├── models/                        # Trained model files
-│   │   ├── gaussian_process_optimized.pkl
-│   │   ├── lstm_optimized.h5
-│   │   ├── mlp_optimized.pkl
-│   │   ├── gradient_boosting.pkl
-│   │   ├── random_forest_optimized.pkl
-│   │   └── svm_optimized.pkl
 │   ├── model_predictions/             # Prediction outputs
 │   ├── performance_metrics.csv        # Comparative metrics
 │   ├── data_statistics.csv           # Dataset statistics
@@ -105,20 +98,6 @@ steel_production_analysis/
 
 ### Installation Steps
 
-1. **Clone or download the project**:
-```bash
-cd /Users/bhavyabansal/Downloads/steel_production_analysis
-```
-
-2. **Install required packages**:
-```bash
-pip install -r requirements.txt
-```
-
-3. **Verify setup**:
-```bash
-python verify_setup.py
-```
 
 ### Required Packages
 
@@ -131,6 +110,25 @@ scikit-learn>=1.0.0
 tensorflow>=2.10.0
 jupyter>=1.0.0
 ```
+## How to Run
+
+This project is intended to be executed in a Jupyter environment (e.g., Jupyter Notebook or the course JupyterHub).
+
+### Option 1: Run using Jupyter Notebook (recommended)
+
+1. Open Jupyter Notebook or JupyterHub.
+2. Navigate to the root directory of the project.
+3. Open `run_project.ipynb`.
+4. Run all cells from top to bottom.
+
+This will execute data preprocessing, exploratory data analysis, model training, and evaluation.
+All figures are automatically saved in the `figures/` directory and evaluation results are saved in the `results/` directory.
+
+### Option 2: Run using Python scripts
+
+From the project root directory, the full pipeline can also be executed using:
+
+python scripts/06_run_pipeline.py
 
 ##  Methodology
 
@@ -168,7 +166,7 @@ jupyter>=1.0.0
    - Square root and logarithmic transformations
    - Cross-feature interactions
 
-**Total Features**: Expanded from original to 100+ engineered features
+**Total Features**: Additional statistical and interaction-based features were explored to enhance model performance.ures
 
 ### Phase 3: Model Training & Evaluation
 
@@ -264,43 +262,6 @@ All visualizations saved in `figures/` directory:
 9. **Error Distribution**: Histogram of prediction errors
 10. **Performance Table**: Comprehensive metrics comparison
 
-##  Usage Instructions
-
-### Quick Start - Run Complete Pipeline
-
-```bash
-cd /Users/bhavyabansal/Downloads/steel_production_analysis/scripts
-python 06_run_pipeline.py
-```
-
-This executes all phases sequentially:
-1. Data loading and statistics
-2. Preprocessing and validation  
-3. Exploratory data analysis
-4. Model training and evaluation
-5. Results analysis and visualization
-
-**Expected Runtime**: ~25 minutes
-
-### Run Individual Phases
-
-```bash
-# Data loading
-python 01_data_loading.py
-
-# Preprocessing
-python 02_data_preprocessing.py
-
-# Exploratory analysis
-python 03_eda.py
-
-# Model training
-python 04_model_training.py
-
-# Results analysis
-python 05_results_analysis.py
-```
-
 ##  Key Insights & Conclusions
 
 
@@ -359,7 +320,7 @@ This project demonstrates that steel quality prediction strongly benefits from n
 
  **All deliverables completed successfully**
  **Six models trained and evaluated**
- **99.96% R² score achieved** (exceptional)
+ **Achieved an R² score of 0.9996**
  **Comprehensive visualizations generated**
  **Production-ready pipeline implemented**
  **Detailed documentation provided**
