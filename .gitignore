@@ -34,12 +34,12 @@ Thumbs.db
 *.tmp
 *.bak
 
-# ❌ ML models (CRITICAL)
+#  ML models (CRITICAL)
 results/models/
 models/
 *.pkl
 *.h5
 *.joblib
 
-# ❌ Archives
+# Archives
 *.zip
